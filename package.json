@@ -1,0 +1,22 @@
+{
+  "name": "npm-repo",
+  "version": "1.0.0",
+  "description": "npm repo test",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwxproject/npm-repo.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "rwx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rwxproject/npm-repo/issues"
+  },
+  "homepage": "https://github.com/rwxproject/npm-repo#readme"
+}
