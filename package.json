@@ -4,7 +4,14 @@
   "description": "npm repo test",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build",
+    "dev": "watch 'npm run build' src"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -18,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/rwxproject/npm-repo/issues"
   },
-  "homepage": "https://github.com/rwxproject/npm-repo#readme"
+  "homepage": "https://github.com/rwxproject/npm-repo#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-latest": "^6.24.0",
+    "watch": "^1.0.2"
+  }
 }
